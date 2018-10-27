@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.rsinukov.errorhandling</id>
+    <name>Error handling warning</name>
+    <version>1.0</version>
+    <vendor email="rxsinukov@gmail.com" url="https://github.com/rsinukov/ErrorHandling">Rustam Sinukov</vendor>
+
+    <description><![CDATA[
+      Plugin that highlights methods that can cause errors, so you won't forget about error handling!
+    ]]>
+    </description>
+
+    <change-notes><![CDATA[
+      First release
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="173.0"/>
+
+    <depends optional="true" config-file="META-INF/withKotlin.xml">org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.lineMarkerProvider
+                language="JAVA"
+                implementationClass="com.rsinukov.errorhandling.JavaCanProduceErrorLineMarkerProvider"
+        />
+    </extensions>
+
+    <actions>
+    </actions>
+
+</idea-plugin>

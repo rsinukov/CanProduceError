@@ -1,0 +1,8 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.lineMarkerProvider
+                language="kotlin"
+                implementationClass="com.rsinukov.errorhandling.KotlinCanProduceErrorLineMarkerProvider"
+        />
+    </extensions>
+</idea-plugin>

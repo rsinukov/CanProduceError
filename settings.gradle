@@ -1,0 +1,4 @@
+rootProject.name = 'CanProduceError'
+
+include ':plugin',
+        ':annotations'
